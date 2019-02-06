@@ -31,6 +31,24 @@ body {
 	}
 }
 
+a {
+	color: #fff;
+	&:hover {
+		color: #fff
+	}
+}
+
+
+.topline {
+	height: 38px;
+	background-color: #444444;
+	ul {
+		display: flex;
+		flex-direction: row
+	}
+
+}
+
 .img-responsive {
 	display: block;
 	max-width: 100%;
