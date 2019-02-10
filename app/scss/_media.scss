@@ -4,54 +4,164 @@
 /*==========  Desktop First  ==========*/
 
 
-@media screen and (max-width: 1440px) {
-	
+@media screen and (max-width: 1440px) {}
+
+// ≥1200px
+@include media-breakpoint-down(lg) {
+	.header-middle .nav-links {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		margin: 0;
+	}
+
+	.header-middle .nav-links li {
+		margin-right: 10px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	.header-middle .nav-links a {
+		width: 164px;
+		height: 40px;
+		font-size: 10px;
+	}
+
+	.header-middle .nav-links {
+		flex-grow: 1;
+	}
+
+	.card-link .card-header h3 {
+		font-size: 12px;
+	}
+
+	.form-holder {
+		width: 100%;
+	}
+
+	#features .col-6:last-child {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	#features b {
+		font-weight: 700;
+		display: block;
+		line-height: 1;
+	}
+
+	#features p {
+		margin-bottom: 10px;
+	}
+
+	#about-us .col-6 {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	#work-patterns .bal-item {
+		transform: scale(0.8)
+	}
+
+	#work-patterns .row:after {
+		left: 10%;
+		width: 80%;
+	}
+
+	.col-3.contacts {
+		padding-left: 0;
+	}
+
+
 }
 
 // ≥1200px
 @include media-breakpoint-down(lg) {
-	
-}
 
-// ≥1200px
-@include media-breakpoint-down(lg) {
-	
+	.features-content {
+		padding-top: 20px;
+	}
+
+	.header-middle .phones {
+		display: none;
+	}
+
+	.header-nav-links nav ul {
+		padding: 10px 179px 12px 17px;
+	}
+
+	.header-nav-links nav a {
+		font-size: 14px;
+	}
+
+	#work-patterns .row:after {
+		align-self: auto;
+		top: 10%;
+	}
+
+	#work-patterns .row:after {
+		top: 25%;
+	}
+
+	#work-patterns .row:before {
+		height: 4px;
+		content: '';
+		background-color: #444;
+		width: 100%;
+		position: absolute;
+		-webkit-align-self: center;
+		-ms-flex-item-align: center;
+		bottom: 25%;
+		left: 15%;
+		width: 65%;
+		z-index: -1;
+	}
+
+	#about-us p {
+		width: 100%;
+	}
+
+	footer .footer-form .form-row {
+		flex-direction: column;
+	}
+	.contacts a {
+		font-size: 15px;
+	}
+
+	.footer-form span {
+		text-align: center;
+	}
+
+	.footer-form form {
+		align-items: center;
+		.form-holder {
+			width: 100%;
+		}
+	}
 }
 
 // ≥992px
-@include media-breakpoint-down(md) {
-
-}
+@include media-breakpoint-down(md) {}
 
 // ≥768px
-@include media-breakpoint-down(sm) {
-
-}
+@include media-breakpoint-down(sm) {}
 
 // ≥576px
-@include media-breakpoint-down(xs) {
-
-}
+@include media-breakpoint-down(xs) {}
 
 
 /*==========  Mobile First  ==========*/
 
 // ≤576px
-@include media-breakpoint-up(sm) {
-
-}
+@include media-breakpoint-up(sm) {}
 
 // ≤768px
-@include media-breakpoint-up(md) {
-
-}
+@include media-breakpoint-up(md) {}
 
 // ≤992px
-@include media-breakpoint-up(lg) {
-
-}
+@include media-breakpoint-up(lg) {}
 
 // ≤1200px
-@include media-breakpoint-up(xl) {
-	
-}
+@include media-breakpoint-up(xl) {}
