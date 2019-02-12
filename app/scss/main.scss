@@ -346,13 +346,11 @@ h2.title-section {
 
 #first-screen #slider-home,
 #first-screen .container {
-	height: 59.8vh;
-}
 
+}
 #first-screen {
 	position: relative;
 	padding: 0;
-	display: none;
 	.container-fluid {
 		padding: 0;
 		position: absolute;
@@ -362,6 +360,7 @@ h2.title-section {
 }
 
 .call-to-action {
+	opacity: 0;
 	background-color: rgba(28, 38, 56, 0.8);
 	width: 546px;
 	color: #fefefe;
