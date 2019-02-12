@@ -73,7 +73,9 @@
 	.col-3.contacts {
 		padding-left: 0;
 	}
-
+	.slick-arrow {
+		display: none !important;
+	}
 
 }
 
@@ -105,19 +107,7 @@
 		top: 25%;
 	}
 
-	#work-patterns .row:before {
-		height: 4px;
-		content: '';
-		background-color: #444;
-		width: 100%;
-		position: absolute;
-		-webkit-align-self: center;
-		-ms-flex-item-align: center;
-		bottom: 25%;
-		left: 15%;
-		width: 65%;
-		z-index: -1;
-	}
+
 
 	#about-us p {
 		width: 100%;
@@ -140,10 +130,27 @@
 			width: 100%;
 		}
 	}
+	
 }
 
 // ≥992px
-@include media-breakpoint-down(md) {}
+@include media-breakpoint-down(md) {
+		#work-patterns .row:before {
+			height: 4px;
+			content: '';
+			background-color: #444;
+			width: 100%;
+			position: absolute;
+			-webkit-align-self: center;
+			-ms-flex-item-align: center;
+			bottom: 25%;
+			left: 15%;
+			width: 65%;
+			z-index: -1;
+		}
+
+	
+}
 
 // ≥768px
 @include media-breakpoint-down(sm) {}

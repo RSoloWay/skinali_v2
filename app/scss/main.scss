@@ -35,6 +35,18 @@ body {
 	}
 }
 
+.slick-track {
+	margin-top: -5px;
+}
+
+.slick-prev:before {
+  content: url(../img/left.png);
+}
+
+
+.slick-next:before {
+	content: url(../img/right.png);
+}
 
 a {
 	color: #fff;
@@ -297,17 +309,17 @@ h2.title-section {
 	z-index: 15;
 }
 
-.slick-next:before, .slick-prev:before {
-	background-color: rgba(5, 80, 80, 1);
-
-}
 
 .slick-prev {
-	left: 0;
+	left: -2%;
 }
 
 .slick-next {
-	right: 0;
+	right: -2%;
+}
+
+#first-screen .container {
+	position: relative;
 }
 
 #form-section {
@@ -740,9 +752,8 @@ footer {
 	background-color: #282828;
 	height: 44px;
 	display: flex;
-	padding-left: 386px;
 	align-items: center;
-
+justify-content: center;
 	span {
 		color: #adadad;
 		font-size: 18px;

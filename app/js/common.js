@@ -2,12 +2,13 @@ $(function() {
   $("#slider-home").slick({
     adaptiveHeight: true,
     arrows: true,
+    // fade: true,
+    appendArrows: '#first-screen .container',
     responsive: [
       {
         breakpoint: 1200,
         settings: {
           centerMode: true,
-          slidesToShow: 1,
           variableWidth: true
         }
       }
@@ -19,9 +20,15 @@ $(function() {
     var heigth;
     var widht = $(window).width();
 
-    heigth = widht * 0.306;
+    heigth = widht * 0.305;
 
-    // $(el).css("height", heigth);
+    if ($(window).width() <= 1200) {
+    return
+    }
+
+    $(el).css("height", heigth);
+    console.log("Print");
+    
   });
 
   $(document).ready(function() {
@@ -34,7 +41,6 @@ $(function() {
     margin = widht / 30;
 
     if ($(window).width() <= 1600 && $(window).width() >= 1200) {
-      console.log("efef");
 
       $(el).css("transform", "scale(" + scale + ")");
       $(el).css("margin-top", margin);
