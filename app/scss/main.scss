@@ -287,12 +287,28 @@ h2.title-section {
 	}
 }
 
-#slider-home {
-	background-image: url(../img/bg-1.png);
-	background-size: contain;
-	background-repeat: no-repeat;
+// #slider-home {
+// 	background-image: url(../img/bg-1.png);
+// 	background-size: contain;
+// 	background-repeat: no-repeat;
+// }
+
+.slick-next, .slick-prev {
+	z-index: 15;
 }
 
+.slick-next:before, .slick-prev:before {
+	background-color: rgba(5, 80, 80, 1);
+
+}
+
+.slick-prev {
+	left: 0;
+}
+
+.slick-next {
+	right: 0;
+}
 
 #form-section {
 	background-color: #c9c9c9;
@@ -364,7 +380,7 @@ h2.title-section {
 	background-color: rgba(28, 38, 56, 0.8);
 	width: 546px;
 	color: #fefefe;
-	z-index: 10;
+	z-index: 20;
 	padding-top: 29px;
 	padding-left: 53px;
 	padding-right: 86px;

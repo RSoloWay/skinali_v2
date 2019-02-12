@@ -1,8 +1,7 @@
 $(function() {
-  $(".slider-home").slick({
-    dots: true,
+  $("#slider-home").slick({
     adaptiveHeight: true,
-    arrows: false,
+    arrows: true,
     responsive: [
       {
         breakpoint: 1200,
@@ -22,7 +21,7 @@ $(function() {
 
     heigth = widht * 0.306;
 
-    $(el).css("height", heigth);
+    // $(el).css("height", heigth);
   });
 
   $(document).ready(function() {
