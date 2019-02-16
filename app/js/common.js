@@ -84,16 +84,63 @@ $(function () {
 
 
 
-	
-		$('.topline li a').hover(function (event) {
-			$(event.target).next().fadeIn("1000")
+
+	$('.topline li span').hover(function (event) {
+		$(event.target).next().fadeIn("1000");
+		event.preventDefault();
+		
 	});
 
-	$('.topline li a').mouseleave(function (event) {
-		$(event.target).next().fadeOut("1000")
-});
+	$('.topline li span').mouseleave(function (event) {
+		$(event.target).next().fadeOut("1000");
+		event.preventDefault();
+	});
 
-    
+
+	$(document).ready(function () {
+		lightbox.option({
+			'resizeDuration': 200,
+			'wrapAround': true
+		})
+
+	})
+
+	$("a[data-lightbox]").click(function () {
+		if (!$('#popup-declined').is(':visible')) {
+			$('body').css('overflow-y','hidden').css('height','100%');
+		} else {
+			$('body').css('overflow-y','auto').css('height','auto');
+		}
+	})
+
+	$(".lb-close").click(function () {
+		$('body').css('overflow-y','auto').css('height','auto');
+		
+	})
+
+
+
+
+
+
+	// console.log($('#lightboxOverlay').is(':visible'));
+
+
+
+	// if ($("#lightboxOverlaya").css('display', 'block')) {
+	// 	$("body").css('overflow', 'hidden')
+	// }
+
+
+
+	// console.log($("#lightboxOverlaya").css('display', 'block'));
+
+
+	// $("#lightboxOverlay").css("display", "block", function() {
+	// 	$("body").css('overflow', 'hidden')
+	// })
+
+
 
 
 

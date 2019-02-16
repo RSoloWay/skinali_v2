@@ -91,6 +91,7 @@ button {
 		display: flex;
 		align-items: center;
 		position: relative;
+
 		.popup_hover {
 			position: absolute;
 			top: 100%;
@@ -100,6 +101,7 @@ button {
 			z-index: 99;
 			display: none;
 			user-select: none;
+
 			span {
 				color: #fff;
 				padding: 10px 10px;
@@ -110,15 +112,18 @@ button {
 		}
 	}
 
-	a {
+	span.item {
 		color: #ffffff;
 		font-size: 15px;
 		font-weight: 400;
 		display: flex;
 		align-items: center;
 		line-height: 1;
+		margin-left: 5px;
+		user-select: none;
 		&:hover {
 			text-decoration: none;
+			cursor: pointer;
 		}
 
 		img {
@@ -203,8 +208,6 @@ h2.title-section {
 		padding-left: 0;
 		padding-right: 0;
 		padding-top: 20px;
-
-		.logo {}
 	}
 
 	.menu-line {
@@ -246,7 +249,7 @@ h2.title-section {
 	.links-mobile {
 		.nav-links {
 			margin: 0;
-			
+
 
 			li {
 				display: flex;
@@ -297,6 +300,7 @@ h2.title-section {
 	width: 100%;
 	background-color: rgba(28, 38, 56, 0.92);
 	display: none;
+
 	.menu {
 		width: 200px;
 		height: 100%;
@@ -308,6 +312,7 @@ h2.title-section {
 		padding-right: 10px;
 		background-color: #055050;
 		transition: 0.3s ease;
+
 		.icon-close {
 			position: absolute;
 			top: 11px;
@@ -548,8 +553,6 @@ h2.title-section {
 	padding-top: 0;
 }
 
-#first-screen #slider-home,
-#first-screen .container {}
 
 #first-screen {
 	position: relative;
@@ -670,6 +673,7 @@ h2.title-section {
 		background-color: #444444;
 		opacity: 0;
 		transition: all 0.3s ease;
+
 		.subtitle {
 			color: #fff;
 			width: 300px;
@@ -724,24 +728,41 @@ h2.title-section {
 		margin: 0;
 	}
 
+
 	.work-item {
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
+		justify-content: flex-start;
 		width: 302px;
 		margin-bottom: 20px;
 		transition: all 0.3s ease;
+		position: relative;
+
 		&:nth-child(12) {
 			.work-item__hover {
 				opacity: 1;
+
+				.btn-orange {
+					color: #fff;
+				}
 			}
 		}
+
 		.thubmail {
 			position: relative;
 			display: block;
 
 			img {
 				width: 100%;
+			}
+		}
+
+		a {
+			color: #000;
+
+			&:hover {
+				text-decoration: none;
+				cursor: pointer;
 			}
 		}
 
@@ -838,11 +859,11 @@ h2.title-section {
 	.number {
 		color: #ffffff;
 		font-size: 54px;
-		font-weight: 700;
+		font-weight: 900;
 		text-transform: uppercase;
 		position: absolute;
 		line-height: 1;
-		right: 17px;
+		right: 25px;
 		top: 0px;
 	}
 
@@ -1017,6 +1038,9 @@ strong {
 	font-weight: bold;
 }
 
+.lb-data .lb-number {
+	display: none !important;
+}
 
 
 @import "media"; // Always at the end
