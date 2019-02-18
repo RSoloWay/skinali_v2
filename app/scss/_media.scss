@@ -272,6 +272,12 @@
 
 // ≥576px
 @include media-breakpoint-down(xs) {
+	#product-items {
+		padding-bottom: 0;
+	}
+	#online-design {
+		padding: 12px 0;
+	}
 	.phones {
 		font-size: 13px;
 	}
