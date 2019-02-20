@@ -88,7 +88,7 @@ $(function () {
 	$('.topline li span').hover(function (event) {
 		$(event.target).next().fadeIn("1000");
 		event.preventDefault();
-		
+
 	});
 
 	$('.topline li span').mouseleave(function (event) {
@@ -107,15 +107,15 @@ $(function () {
 
 	$("a[data-lightbox]").click(function () {
 		if (!$('#popup-declined').is(':visible')) {
-			$('body').css('overflow-y','hidden').css('height','100%');
+			$('body').css('overflow-y', 'hidden').css('height', '100%');
 		} else {
-			$('body').css('overflow-y','auto').css('height','auto');
+			$('body').css('overflow-y', 'auto').css('height', 'auto');
 		}
 	})
 
 	$(".lb-close").click(function () {
-		$('body').css('overflow-y','auto').css('height','auto');
-		
+		$('body').css('overflow-y', 'auto').css('height', 'auto');
+
 	})
 
 
@@ -139,8 +139,6 @@ $(function () {
 	// $("#lightboxOverlay").css("display", "block", function() {
 	// 	$("body").css('overflow', 'hidden')
 	// })
-
-
 
 
 
