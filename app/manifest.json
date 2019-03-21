@@ -5,17 +5,17 @@
 	"description": "Декоративные панели",
 	"short_name": "Skinali",
 	"icons": [{
-		"src": "/icon/icon-1.png",
+		"src": "icon/icon-1.png",
 		"sizes": "64x64",
 		"type": "image/webp"
 	}, {
-		"src": "/icon/icon-2.png",
+		"src": "icon/icon-2.png",
 		"sizes": "64x64"
 	}, {
-		"src": "/icon/icon-3.png",
+		"src": "icon/icon-3.png",
 		"sizes": "128x128"
 	}, {
-		"src": "/icon/hd_hi",
+		"src": "icon/hd_hi",
 		"sizes": "128x128"
 	}],
 	"start_url": "https://barraki.github.io/skinali_v2/app/index.html",
