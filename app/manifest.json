@@ -6,8 +6,7 @@
 	"short_name": "Skinali",
 	"icons": [{
 		"src": "icon/icon-1.png",
-		"sizes": "64x64",
-		"type": "image/webp"
+		"sizes": "64x64"
 	}, {
 		"src": "icon/icon-2.png",
 		"sizes": "64x64"
