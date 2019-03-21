@@ -75,10 +75,10 @@ $(function () {
 			$(".menu").css("right", "0");
 			$("body").css("overflow", "hidden");
 		})
-		$(".icon-close").click(function () {
+		$(".icon-close, #lightboxOverlay").click(function () {
 			$(".menu").css("right", "-100px");
 			$("#mobile-menu").fadeOut("1000");
-			$("body").css("overflow", "scroll");
+			$("body").css("overflow", "auto");
 		})
 	})
 
