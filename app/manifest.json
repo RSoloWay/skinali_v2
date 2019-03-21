@@ -18,7 +18,7 @@
 		"src": "/icon/hd_hi",
 		"sizes": "128x128"
 	}],
-	"start_url": "https://barraki.github.io/skinali_v2/",
+	"start_url": "https://barraki.github.io/skinali_v2/app/index.html",
 	"display": "standalone",
 	"orientation": "landscape",
 	"theme_color": "#00bebe",
