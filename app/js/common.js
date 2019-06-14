@@ -142,11 +142,8 @@ $(function () {
 	});
 
 //  Скрипт для табов
-	var tabsButton = $('.tabs-btn')
-	var tabsActive = $('.tabs-info')
-	tabsButton.on('click', function(event){
-		event.preventDefault();
-		tabsActive.toggleClass('active');
+	$('.tabs-btn').click(function(){
+		$(this).siblings().toggleClass('active');
 	})
 // 
 

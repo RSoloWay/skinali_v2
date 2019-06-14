@@ -37,7 +37,8 @@ gulp.task('styles', function() {
 
 gulp.task('scripts', function() {
 	return gulp.src([
-		'app/libs/slick-1.8.1/slick/slick.min.js',
+    'app/libs/slick-1.8.1/slick/slick.min.js',
+    'app/libs/jquery-ui-1.12.1.custom/jquery-ui-1.12.1.custom/jquery-ui.min.js',
 		'app/libs/lightbox/dist/js/lightbox.min.js',
 		'app/js/common.js', // Always at the end
 		])
