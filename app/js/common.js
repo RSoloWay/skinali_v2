@@ -86,8 +86,7 @@ $(function () {
 
 
 	$('.topline li span').hover(function (event) {
-		$(event.target).next().fadeIn("1000");
-		event.preventDefault();
+		$(this).siblings().fadeIn("1000");
 
 	});
 
@@ -118,10 +117,114 @@ $(function () {
 
 	})
 
+	// Скрипты для panno.html
 
+	$("#slider-panno").slick({
+		adaptiveHeight: true,
+		arrows: true,
+		// fade: true,
+		appendArrows: '#first-screen-panno .container',
+		responsive: [{
+			breakpoint: 1200,
+			settings: {
+				centerMode: true,
+				variableWidth: true,
+				appendArrows: '',
+			},
+			breakpoint: 786,
+			settings: {
+				centerMode: false,
+				variableWidth: false,
+				appendArrows: '',
+			}
+		}]
+	});
 
+//  Скрипт для табов
+	$('.tabs-btn').click(function(){
+		$(this).siblings().toggleClass('active');
+	})
+// 
 
+		$('.catalog-item').css('width')
+		$('.catalog-item').css({
+			'width': $('.catalog-item').css('width')
+		});
 
+		// Скрипты для banner.html
+		$(function () {
+			$("#draggable1").draggable({
+				cursor: "pointer, scroll: true"
+			});
+			$("#draggable2").draggable({
+				cursor: "pointer, scroll: true"
+			});
+			$("#draggable3").draggable({
+				cursor: "pointe, scroll: truer"
+			});
+			$("#draggable4").draggable({
+				cursor: "pointe, scroll: truer"
+			});
+			$("#draggable5").draggable({
+				cursor: "pointe, scroll: truer"
+			});
+			$("#draggable6").draggable({
+				cursor: "pointe, scroll: truer"
+			});
+		});	
+		$(".slider-main").slick({
+			dots: true,
+			adaptiveHeight: true,
+			arrows: true,
+			responsive: [{
+				breakpoint: 1200,
+				settings: {
+					centerMode: true,
+					slidesToShow: 1,
+					variableWidth: true
+				}
+			}]
+		});	
+		$(".catalog-item").hover(function () {
+			$(this).toggleClass("active");
+		});
+		$(".catalog-item-sq").hover(function () {
+			$(this).toggleClass("active");
+		});
+	
+
+		
+	$("#containment-wrapper div").on("click", function () {
+		$(".tooltip-flip").fadeOut()
+	});
+		
+
+// scripts for skinali-fotooboi-verstka
+
+$("#slider-wallpapers").slick({
+	adaptiveHeight: true,
+	arrows: true,
+	// fade: true,
+	appendArrows: '#first-screen-wallpapers .container',
+	responsive: [{
+		breakpoint: 1200,
+		settings: {
+			centerMode: true,
+			variableWidth: true,
+			appendArrows: '',
+		},
+		breakpoint: 786,
+		settings: {
+			centerMode: false,
+			variableWidth: false,
+			appendArrows: '',
+		}
+	}]
+});
+
+$(function () {
+	$("#tabs").tabs();
+});
 
 	// console.log($('#lightboxOverlay').is(':visible'));
 
