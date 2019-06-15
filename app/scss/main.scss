@@ -52,7 +52,8 @@ a {
 	color: #fff;
 
 	&:hover {
-		color: #fff
+    color: #fff;
+    text-decoration: none;
 	}
 }
 
@@ -1362,7 +1363,8 @@ strong {
 	}
 	.btn_yellow {
 		box-shadow: 3px 3px 0 #abab11;
-		background-color: #dbdb23;
+    background-color: #dbdb23;
+    color: #fff;
 		&:hover {
 			box-shadow: none;
 			color: #0b3d3c;
@@ -3754,7 +3756,7 @@ b, strong {
 			}
 			
 			.tooltip {
-				width: 380px;
+				width: 100%;
 				position: absolute;
 				top: 100%;
 				left: 50%;

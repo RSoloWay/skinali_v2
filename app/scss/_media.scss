@@ -59,7 +59,30 @@
 	.slider-content .draggable-container #draggable4 {
 		left: 1514px;
 		top: 228px;
-	}
+  }
+  
+  .catalog #tabs .catalog-item-sq.active .tooltip {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 15px;
+  }
+
+  .catalog #tabs .catalog-item-sq.active .tooltip > span {
+   margin-bottom: 10px;
+   display: block;
+  }
+
+  .catalog #tabs .catalog-item-sq .tooltip .btn_yellow {
+    margin: 0;
+  }
+
+  #first-screen-wallpapers .container .slick-prev, #first-screen-panno .container .slick-prev, .short-description .slider-content .slider-main .slick-prev {
+    left: 5%;
+  }
+  #first-screen-wallpapers .container .slick-next, #first-screen-panno .container .slick-next, .short-description .slider-content .slider-main .slick-next {
+    right: 5%;
+  }
 }
 
 @media only screen and (max-width: 1700px) {

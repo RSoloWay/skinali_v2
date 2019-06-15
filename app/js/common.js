@@ -86,8 +86,7 @@ $(function () {
 
 
 	$('.topline li span').hover(function (event) {
-		$(event.target).next().fadeIn("1000");
-		event.preventDefault();
+		$(this).siblings().fadeIn("1000");
 
 	});
 
