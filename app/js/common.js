@@ -189,6 +189,9 @@ $(function () {
 		$(".catalog-item").hover(function () {
 			$(this).toggleClass("active");
 		});
+		$(".catalog-item-sq").hover(function () {
+			$(this).toggleClass("active");
+		});
 	
 
 		
@@ -218,6 +221,10 @@ $("#slider-wallpapers").slick({
 			appendArrows: '',
 		}
 	}]
+});
+
+$(function () {
+	$("#tabs").tabs();
 });
 
 	// console.log($('#lightboxOverlay').is(':visible'));
