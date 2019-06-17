@@ -539,6 +539,9 @@
 
 // ≥768px
 @include media-breakpoint-down(sm) {
+
+	
+
 	.header-desktop {
 		display: none;
 	}
@@ -638,6 +641,79 @@
 
 // ≥576px
 @include media-breakpoint-down(xs) {
+	.catalog {
+		#tabs {
+			.catalog-item {
+				img {
+					height: min-content;
+				}
+				.tooltip {
+					width: 376px;
+					h3, span {
+						
+					}
+					.btn_yellow {
+						text-align: center;
+						width: 50%;
+					}
+				}
+			}
+			.catalog-item-sq {
+				.tooltip {
+					padding: 0;
+					.btn_yellow {
+						width: 110%;
+						text-align: center;
+						line-height: 1;
+					}
+				}
+			}
+			ul {
+				width: 100%;
+				margin: 0;
+				margin-bottom: 20px;
+				padding: 0;	
+				align-items: center;
+				li {
+					margin: 0;
+					padding: 0;
+					width: 50%;
+					a {
+						font-size: 10px;
+						line-height: 1;
+						height: 35px;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						text-align: center;						
+					}
+				}
+			}
+		}
+	}
+	.tabs-section {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		.tabs-btn {
+			.tabs-btn-content {
+				height: 65px;
+				h3 {
+					font-size: 18px;
+				}
+			}
+		}
+	}
+	.wallpapers {
+		h3 {
+			font-size: 25px;
+		}
+	}
+	.short-description {
+	
+	}
+	.about-panno {
+		margin-top: 56px;
+	}
 	#product-items {
 		padding-bottom: 0;
 	}
@@ -911,7 +987,8 @@
 
 	#work-patterns span:nth-child(2n) {
     width: 112px;
-}
+	}
+	
 }
 
 
