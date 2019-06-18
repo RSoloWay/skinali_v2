@@ -1050,6 +1050,20 @@ strong {
 #first-screen-panno {
 	position: relative;
 	padding: 0;
+	.call-to-action {
+		position: absolute;
+		top: 0px;
+		height: 360px;
+		width: 550px;
+		padding-top: 40px;
+		padding-bottom: 40px;
+		padding-left: 40px;
+		padding-right: 20px;
+		h1 {
+			color: #fff;
+			font-size: 40px;
+		}
+	}
 	img {
 		width: 100%;
 	
@@ -1057,13 +1071,13 @@ strong {
 
 	.container-fluid {
 		padding: 0;
-		position: absolute;
+		position: relative;
 		top: 0;
 		left: 0;
 	}
 	.container {
 		.slick-arrow {
-			top: 60%;
+			top: 50%;
 		}
 		.slick-next {
 			right: 10%;
@@ -1072,11 +1086,10 @@ strong {
 			left: 10%;
 		}
 	}
+
 }
 
-.about-panno {
-	margin-top: 291px;
-}
+
 
 #image-catalog {
 	width: 100%;
@@ -3345,28 +3358,28 @@ section {
 	position: absolute;
 }
 
-.slider-content .draggable-container #draggable1 {
-	position: absolute;
-	top: 190px;
-	left: 580px;
-}
+// .slider-content .draggable-container #draggable1 {
+// 	position: absolute;
+// 	top: 190px;
+// 	left: 580px;
+// }
 
-.slider-content .draggable-container #draggable2 {
-	position: absolute;
-	top: 8px;
-	left: 768px;
-}
+// .slider-content .draggable-container #draggable2 {
+// 	position: absolute;
+// 	top: 8px;
+// 	left: 768px;
+// }
 
-.slider-content .draggable-container #draggable3 {
-	position: absolute;
-	left: 968px;
-	top: -61px;
-}
+// .slider-content .draggable-container #draggable3 {
+// 	position: absolute;
+// 	left: 968px;
+// 	top: -61px;
+// }
 
-.slider-content .draggable-container #draggable4 {
-	left: 1186px;
-	top: 170px;
-}
+// .slider-content .draggable-container #draggable4 {
+// 	left: 1186px;
+// 	top: 170px;
+// }
 
 .slick-dots li button:before {
 	content: '';
@@ -3821,7 +3834,8 @@ b, strong {
 						margin: 8px 15px;
 						border-radius: 5px;
 						font-weight: 400;
-						text-shadow: 0 0 0.65px #000;
+						// text-shadow: 0 0 0.65px #000;
+						text-shadow: 0.7px 0 0 #000;
 					}
 				}		
 				.btn_tab {
@@ -3848,7 +3862,8 @@ b, strong {
 					margin: 8px 15px;
 					border-radius: 5px !important;
 					font-weight: 400;
-					text-shadow: 0 0 0.65px #000;
+					// text-shadow: 0 0 0.65px #000;
+					text-shadow: 0.7px 0 0 #000;
 				}
 				span {
 					display: none !important;

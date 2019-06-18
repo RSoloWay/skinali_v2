@@ -229,7 +229,9 @@ $("#slider-wallpapers").slick({
 });
 
 $(function () {
-	$("#tabs").tabs();
+	$("#tabs").tabs({
+		
+	});
 });
 
 	// console.log($('#lightboxOverlay').is(':visible'));
