@@ -182,6 +182,12 @@ $(function () {
 					centerMode: true,
 					slidesToShow: 1,
 					variableWidth: true
+				},
+				breakpoint: 786,
+				settings: {
+					centerMode: false,
+					variableWidth: false,
+					appendArrows: '',
 				}
 			}]
 		});	
