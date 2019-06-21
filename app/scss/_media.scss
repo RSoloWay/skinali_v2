@@ -259,7 +259,7 @@
 
 	.short-description .slider-content .draggable-container #draggable3 {
 		left: 926px;
-		top: 37px;
+		top: 37gulppx;
 	}
 
 	.short-description .slider-content .draggable-container #draggable4 {
@@ -783,6 +783,19 @@
 
 // ≥576px
 @include media-breakpoint-down(xs) {
+	.materials {
+		.materials-item {
+			align-items: center !important;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			p, ul {
+				text-align: justify;
+				letter-spacing: -1px;
+				width: 90%;
+				font-size: 13px;
+			}
+		}
+	}
 	.short-description {
 		.slider-main {
 			margin-bottom: 30px;

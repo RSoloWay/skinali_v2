@@ -146,10 +146,20 @@ $(function () {
 	})
 // 
 
-		$('.catalog-item').css('width')
-		$('.catalog-item').css({
-			'width': $('.catalog-item').css('width')
+		$('.catalog-item-sq').css('width')
+		$('.catalog-item-sq').css({
+			'width': $('.catalog-item-sq').css('width')
 		});
+
+		var widthBlock = $('.interactive').width();
+		console.log(widthBlock);
+		var a = (widthBlock * 0.7);
+		console.log(a);
+		$('.interactive').css({
+			height: a
+		});
+
+		
 
 		// Скрипты для banner.html
 		$(function () {
