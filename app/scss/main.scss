@@ -464,7 +464,7 @@ h2.title-section {
 
 			&:last-of-type {
 				position: absolute;
-				right: 0;
+				right: -2px;
 				top: 4.5px;
 
 				a {
@@ -490,6 +490,7 @@ h2.title-section {
 		.open-page {
 			a {
 				background: #00bebe;
+				color: #fff;
 				&::before {
 					content: '';
 					bottom: -6px;
@@ -521,6 +522,7 @@ h2.title-section {
 			}
 			&:hover {
 				background: #00bebe;
+				color: #fff;
 			}
 			&:hover:before {
 				height: 7px;
