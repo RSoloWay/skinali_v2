@@ -468,7 +468,7 @@ h2.title-section {
 				top: 4.5px;
 
 				a {
-					width: 166px;
+					width: 168px;
 					height: 44px;
 					color: #ffff;
 					background-color: #f48208;
@@ -1615,6 +1615,7 @@ strong {
 	width: 100%;
 	border-top: 2px solid #444444;
 	border-bottom: 2px solid #444444;
+	padding: 40px 0;
 	.tabs-btn {
 		background: #80caca;
 		width: 100%;
@@ -1708,7 +1709,9 @@ strong {
 	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
 	animation: jump 1.5s ease 0s infinite normal;
 }
-
+.wallpapers {
+	margin-top: -5px;
+}
 .tooltip-flip:after {
 	content: '';
 	display: block;
@@ -3750,6 +3753,8 @@ b, strong {
 				height: 60px;
 				opacity: 1;
 				margin-top: -1px;
+				transform: scaleY(1);
+				transform: translateX(-50%);
 			}
 		}
 		display: flex;
@@ -3847,7 +3852,7 @@ b, strong {
 				position: absolute;
 				top: 100%;
 				left: 50%;
-				height: 0;
+				height: 60px;
 				padding-left: 25px;
 				padding-right: 15px;
 				border-radius: 0 0 5px 10px;
@@ -3860,6 +3865,8 @@ b, strong {
 				opacity: 0;
 				justify-content: space-between;
 				transform: translateX(-50%);
+				transform: scaleY(0);
+				margin-top: -60px;
 				h3 { 
 					color: #0b3d3c;
 					font-size: 16px;
@@ -3872,6 +3879,7 @@ b, strong {
 				}
 				.btn_yellow {
 					width: 285px;
+					height: 80%;
 					background: #f48208;
 					box-shadow: 3px 3px 0 #d97307;
 					padding: 0;
@@ -3882,7 +3890,7 @@ b, strong {
 		ul {
 			margin-top: 10px;
 			margin-bottom: 20px;
-			width: 77%;
+			width: 100%;
 			display: flex;
 			flex-direction: row;
 			justify-content: center;
