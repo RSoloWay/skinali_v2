@@ -3,19 +3,20 @@ $(function () {
 		adaptiveHeight: true,
 		arrows: true,
 		// fade: true,
-		appendArrows: '#first-screen .container',
+	
 		responsive: [{
 			breakpoint: 1200,
 			settings: {
 				centerMode: true,
 				variableWidth: true,
-				appendArrows: '',
+				appendArrows: '#slider-home',
 			},
 			breakpoint: 786,
 			settings: {
 				centerMode: false,
 				variableWidth: false,
-				appendArrows: '',
+				adaptiveHeight: false,
+				appendArrows: '#slider-home',
 			}
 		}]
 	});
@@ -32,11 +33,13 @@ $(function () {
 		}
 
 		if ($(window).width() <= 768) {
-			heigth = "100%"
+			heigth = "100%";
+			$('#work-patterns .row').append('<span></span>');
 		}
 
-
-		$(el).css("height", heigth);
+		if ($(window).width() >= 1200) { 
+			$(el).css("height", heigth);
+		}
 	});
 
 	$(document).ready(function () {
@@ -54,7 +57,7 @@ $(function () {
 			$(el).css("margin-top", margin);
 		} else {}
 
-		if ($(window).width() >= 768) {
+		if ($(window).width() >= 1200) {
 			$(el).animate({
 					opacity: 1
 				},
@@ -75,7 +78,7 @@ $(function () {
 			$(".menu").css("right", "0");
 			$("body").css("overflow", "hidden");
 		})
-		$(".icon-close, #lightboxOverlay").click(function () {
+		$(".icon-close, #lightboxOverlay, .bg-dark").click(function () {
 			$(".menu").css("right", "-100px");
 			$("#mobile-menu").fadeOut("1000");
 			$("body").css("overflow", "auto");
@@ -241,24 +244,4 @@ $(function () {
 		
 	});
 });
-
-	// console.log($('#lightboxOverlay').is(':visible'));
-
-
-
-	// if ($("#lightboxOverlaya").css('display', 'block')) {
-	// 	$("body").css('overflow', 'hidden')
-	// }
-
-
-
-	// console.log($("#lightboxOverlaya").css('display', 'block'));
-
-
-	// $("#lightboxOverlay").css("display", "block", function() {
-	// 	$("body").css('overflow', 'hidden')
-	// })
-
-
-
 });

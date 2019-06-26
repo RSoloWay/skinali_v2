@@ -344,9 +344,7 @@
 		padding-left: 0;
 	}
 
-	.slick-arrow {
-		display: none !important;
-	}
+
 
 }
 
@@ -399,7 +397,7 @@
 	}
 
 	#work-patterns .row:after {
-		top: 25%;
+		top: 50%;
 	}
 
 
@@ -529,7 +527,32 @@
   
   .tooltip-flip .btn_yellow {
     width: 250px;
-  }
+	}
+	#first-screen .container-fluid {
+		position: relative;
+	}
+	.container {
+		max-width: 100%;
+		.call-to-action {
+			position: relative;
+			width: 100%;
+			height: max-content;
+			padding: 12px 10px 40px 25px;
+			margin-top: 0;
+			background-color: rgba(28, 38, 56, 1);
+			opacity: 1;
+			h1 {
+				width: 100%;
+				font-size: 42px;
+				line-height: 1;
+			}
+		}
+	}
+
+	.slick-track {
+		margin-top: 2px;
+	}
+	
 }
 
 // ≥992px
@@ -542,12 +565,15 @@
 		background-color: #444;
 		width: 100%;
 		position: absolute;
-		-webkit-align-self: center;
 		-ms-flex-item-align: center;
 		bottom: 25%;
 		left: 15%;
-		width: 65%;
+		width: 75%;
 		z-index: -1;
+	}
+
+	#work-patterns .row:after {
+		top: 25%;
 	}
 
 	.card-link {
@@ -567,6 +593,15 @@
 	#our-works .work-item {
 		width: 370px;
 	}
+	.card-link:nth-child(3) {
+		margin-top: 19px;
+	}
+
+	.header-nav-links nav ul {
+		padding-right: 15px;
+	}
+
+
 }
 
 // ≥768px
@@ -612,20 +647,7 @@
 		padding: 0;
 		min-height: 200px;
 		max-height: max-content;
-		.container {
-			max-width: 100%;
-			.call-to-action {
-				position: relative;
-				width: 100%;
-				height: max-content;
-				padding: 12px 10px 40px 25px;
-				h1 {
-					width: 100%;
-					font-size: 42px;
-					line-height: 1;
-				}
-			}
-		}
+
 	}
 	#first-screen-panno {
 		.container {
@@ -651,9 +673,7 @@
 				}
 				.tooltip {
 					width: 376px;
-					h3, span {
-						
-					}
+	
 					.btn_yellow {
 						text-align: center;
 						width: 50%;
@@ -739,9 +759,7 @@
 		margin-top: 0;
 	}
 
-	#first-screen .container-fluid {
-		position: relative;
-	}
+
 
 	.call-to-action {
 		margin-top: -5px;
@@ -767,7 +785,6 @@
 	.card-link {
 		width: 100%;
 		margin: 0;
-		margin-bottom: 20px;
 	}
 
 	.card-link:nth-child(3) {
@@ -821,6 +838,14 @@
 
 	.bottom-line {
 		display: none;
+	}
+
+	
+}
+
+@media all and (max-width: 767px ) {
+	#our-works .work-item {
+		width: 100%;
 	}
 }
 
@@ -924,9 +949,6 @@
 				}
 				.tooltip {
 					width: 376px;
-					h3, span {
-						
-					}
 					.btn_yellow {
 						text-align: center;
 						width: 50%;
@@ -1011,9 +1033,7 @@
 			font-size: 25px;
 		}
 	}
-	.short-description {
-	
-	}
+
 	#product-items {
 		padding-bottom: 0;
 	}
@@ -1075,7 +1095,7 @@
 	}
 
 	.call-to-action h1 {
-		font-size: 17px;
+		font-size: 17px !important;
 		line-height: 1;
 		letter-spacing: 1px;
 	}
@@ -1289,7 +1309,25 @@
 	#work-patterns span:nth-child(2n) {
     width: 112px;
 	}
-	
+	#work-patterns .row:before  {
+		width: 65%;
+		left: 5%;
+	}
+
+	#work-patterns .row > span {
+		height: 4px;
+    background-color: rgb(68, 68, 68);
+    position: absolute;
+    top: 50%;
+		left: 50%;
+		display: block;
+    width: 65%;
+    z-index: -1;
+	}
+
+	.slick-next {
+		right: 7%;
+	}
 }
 
 

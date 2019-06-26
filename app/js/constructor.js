@@ -36,10 +36,10 @@ $("input[name=odnoton_select]").change(function () {
   var radio = $('input[name=odnoton_select]:checked').val();
   //console.log(radio);
   if (radio == "all") {
-    $('.odnoton_container').css("display", "flex");
+    $('.odnoton_container').css("display", "block");
   } else {
     $('.odnoton_container').hide();
-    $('.odnoton_' + radio).css("display", "flex");
+    $('.odnoton_' + radio).css("display", "block");
   }
 });
 
@@ -56,7 +56,7 @@ $("#color_image_select").change(function (e) {
 		str += $( this ).attr('data-name');
 	});
   $(".selected_block").hide();
-  $(".selected_block" + "." + str).css("display", "flex").animate({
+  $(".selected_block" + "." + str).css("display", "block").animate({
     opacity: 1,
   }, 1000);
 });
@@ -85,9 +85,10 @@ $('#up-js').click(function (e) {
 $(document).ready(function () {
 	if ($(window).width() >= 768) { 
 		let height =$('.image_container').height();
-		$('.selected_block, .left_side, .image_container, .panel_container, .construcor_panel').height(height);
+		$('.left_side, .image_container, .panel_container, .construcor_panel').height(height);
+		$('#selected_blocks').height(height - 100);
 	} else {
-		$('.selected_block, .left_side, .image_container, .panel_container, .construcor_panel').height('800px');
+		$('.panel_container, .construcor_panel').height('600px');
 	}
 });
 

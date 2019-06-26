@@ -1000,12 +1000,10 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   margin-bottom: 5px;
   display: block;
 }
-#selected_blocks {
-  position: relative;
-}
+
 
 .panel_container .opacity {
-  height: 101px;
+  height: 41px;
   width: 100%;
   background-image: linear-gradient(
     to top,
@@ -1094,8 +1092,7 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
 
 .constructor .panel_container .construcor_panel .selected_block {
   display: none;
-  flex-direction: row;
-  flex-wrap: wrap;
+ position: relative;
   opacity: 0;
 }
 
@@ -1117,7 +1114,7 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
 #selected_blocks {
   overflow: scroll;
   position: relative;
-  overflow-x: hidden;
+	height: 15.1%;
 }
 
 #btn-slide {
@@ -1175,13 +1172,6 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   div
   img.set_image:hover {
   transform: scale(1.1);
-}
-
-.constructor .panel_container .construcor_panel .odnoton_block {
-  display: flex;
-  opacity: 1;
-  margin-left: -5px;
-  margin-right: -5px;
 }
 
 .tooltip-mobile {
@@ -1259,19 +1249,7 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   .panel_container
   .construcor_panel
   .odnoton_block
-  .odnoton_container {
-  flex-direction: row;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  display: flex;
-  width: 100%;
-}
-
-.constructor
-  .panel_container
-  .construcor_panel
-  .odnoton_block
-  .odnoton_container
+  
   div {
   display: block;
   -webkit-box-sizing: border-box;
@@ -1289,7 +1267,7 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   .panel_container
   .construcor_panel
   .odnoton_block
-  .odnoton_container
+  
   .set_color {
   transition: 0.3s ease;
 }
@@ -1298,7 +1276,7 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   .panel_container
   .construcor_panel
   .odnoton_block
-  .odnoton_container
+  
   .set_color:hover {
   border: 4px solid #585858;
 }
@@ -1307,7 +1285,7 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   .panel_container
   .construcor_panel
   .odnoton_block
-  .odnoton_container
+  
   .set_color:hover
   span {
   background-color: rgba(255, 255, 255, 1);
@@ -1317,7 +1295,7 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   .panel_container
   .construcor_panel
   .odnoton_block
-  .odnoton_container
+  
   div
   span {
   position: absolute;
@@ -1401,7 +1379,9 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
 
 @media screen and (max-width: 992px) {
 
-
+	.constructor {
+		flex-direction: column;
+	}
 	.constructor .panel_container .construcor_panel .panelRightSide>span {
 		margin: 0;
 		text-align: center;
