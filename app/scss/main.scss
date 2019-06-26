@@ -1628,7 +1628,7 @@ strong {
 			font-weight: 400;
 			color: #fff;
 			img {
-				margin-top: -10px;
+				margin-top: -5px;
 			}
 			h3 {
 				margin-left: 35px;
@@ -3724,6 +3724,7 @@ b, strong {
 	padding-bottom: 0;
 	.pagination-arrow {
 		font-size: 13px;
+		margin-top: 2px;
 	}
 	.pagination-btn {
 		width: max-content;
@@ -3874,8 +3875,13 @@ b, strong {
 					margin: 0;
 				}
 				span {
-					color: #0b3d3c;
+					color: #444444;
 					font-size: 16px;
+					font-weight: 300;
+					i {
+						font-size: 18px;
+						font-weight: 400;
+					}
 				}
 				.btn_yellow {
 					width: 285px;
