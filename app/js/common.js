@@ -152,9 +152,7 @@ $(function () {
 		});
 
 		var widthBlock = $('.interactive').width();
-		console.log(widthBlock);
 		var a = (widthBlock * 0.7);
-		console.log(a);
 		$('.interactive').css({
 			height: a
 		});

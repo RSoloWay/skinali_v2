@@ -37,6 +37,10 @@ body {
 	}
 }
 
+.no-p {
+	padding: 0 !important;
+}
+
 .slick-track {
 	margin-top: -5px;
 }
@@ -68,6 +72,7 @@ section {
 }
 
 button {
+	outline: none !important;
 	background: none;
 	border: none;
 }
@@ -293,6 +298,10 @@ h2.title-section {
 			}
 		}
 	}
+}
+
+#online-design {
+	padding: 0;
 }
 
 #mobile-menu {
@@ -603,6 +612,11 @@ h2.title-section {
 
 #product-items {
 	padding-top: 0;
+	padding-bottom: 0;
+}
+
+#online-design {
+	padding-top: 24px;
 }
 
 
@@ -672,6 +686,7 @@ h2.title-section {
 	width: 120px;
 	flex-grow: 1;
 	margin: 19px;
+	margin-bottom: 0;
 	position: relative;
 
 	&:nth-child(1) {
@@ -4049,4 +4064,5 @@ b, strong {
 	}
 }
 
+@import "constructor";
 @import "media"; // Always at the end
