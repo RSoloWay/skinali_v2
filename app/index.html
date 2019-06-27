@@ -21,11 +21,11 @@
 	<!-- Custom Browsers Color Start -->
 	<meta name="theme-color" content="#00bebe">
 	<!-- Custom Browsers Color End -->
-	<link rel="manifest" href="manifest.json"> 
+	<link rel="manifest" href="manifest.json">
 
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&amp;subset=cyrillic" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-	 crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+		integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/main.min.css">
 
 </head>
@@ -37,12 +37,12 @@
 				<div class="container">
 					<div class="row">
 						<ul class="list-navigation">
-							<li><img src="img/icon-1.png" alt=""><span class="item"> Гарантия</span> 
+							<li><img src="img/icon-1.png" alt=""><span class="item"> Гарантия</span>
 								<div class="popup_hover">
 									<span>Наш магазин дает 100% гарантию качество производства. И возврат денег при браке.</span>
 								</div>
 							</li>
-							<li><img src="img/icon-2.png" alt=""><span class="item"> UV Печать</span> 
+							<li><img src="img/icon-2.png" alt=""><span class="item"> UV Печать</span>
 								<div class="popup_hover">
 									<span>Наш магазин дает 100% гарантию качество производства. И возврат денег при браке.</span>
 								</div>
@@ -129,19 +129,22 @@
 	</header>
 	<div id="mobile-menu">
 		<div class="bg-dark">
+			</div>
 			<div class="menu">
 				<div class="icon-close"><img src="img/close.png" alt=""></div>
 				<ul class="menu-list">
 					<li><a href="#" target="_blank" rel="noopener noreferrer">Каталог</a></li>
 					<li><a href="#" target="_blank" rel="noopener noreferrer" style="color: #f48208;">Примерка </a></li>
-					<li><a href="#" target="_blank" rel="noopener noreferrer"><i class="fas fa-chevron-left"></i>Материалы</a></li>
-					<li><a href="#" target="_blank" rel="noopener noreferrer"><i class="fas fa-chevron-left"></i>В интерьере</a></li>
+					<li><a href="#" target="_blank" rel="noopener noreferrer"><i class="fas fa-chevron-left"></i>Материалы</a>
+					</li>
+					<li><a href="#" target="_blank" rel="noopener noreferrer"><i class="fas fa-chevron-left"></i>В интерьере</a>
+					</li>
 					<li><a href="#" target="_blank" rel="noopener noreferrer"><i class="fas fa-chevron-left"></i>Доставка</a></li>
 					<li><a href="#" target="_blank" rel="noopener noreferrer">Оплата</a></li>
 					<li><a href="#" target="_blank" rel="noopener noreferrer">Цены</a></li>
 				</ul>
 			</div>
-		</div>
+		
 	</div>
 	<main>
 		<section id="first-screen">
@@ -208,6 +211,181 @@
 		</section>
 		<section id="online-design">
 			<h2 class="title-section">ОНЛАЙН ДИЗАЙН</h2>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12 no-p">
+						<div class="primerka-skinali-block">
+							<div class="constructor">
+								<div class="left_side col-12 col-lg-8 col-xl-9 no-p">
+									<div class="image_container">
+										<img src="/img/skinali_kitchen.png" alt="">
+										<div id="part_top_left" class="part-top-left"></div>
+										<div id="part_top_right" class="part-top-right"></div>
+										<div id="part_middle" class="part-middle"></div>
+										<div id="part_bottom" class="part-bottom"></div>
+									</div>
+									<div class="choose_top_color input_container">
+										<label title="Выбор цвета верхнего фасада" for="topColorPicker"></label>
+										<input id="topColorPicker" />
+									</div>
+									<div class="choose_bottom_color input_container">
+										<label title="Выбор цвета нижнего фасада" for="bottomColorPicker"></label>
+										<input id="bottomColorPicker" />
+									</div>
+									<button type="button" id="bottomAsTop"></button>
+								</div>
+								<div class="panel_container">
+									<div class="construcor_panel">
+										<div class="panelLeftSide">
+										</div>
+										<div class="panelRightSide">
+											<span>Категория</span>
+											<select name="color_image_select" id="color_image_select">
+												<option data-name="odnoton_block" class="active">Однотонные</option>
+												<option data-name="skinali_fruits" data-category-id="132">Фрукты</option>
+												<option data-name="skinali_marble" data-category-id="131">Текстура камня</option>
+												<option data-name="kitchen_abstractio" data-category-id="130">Абстракция</option>
+											
+
+											</select>
+											<div id="selected_blocks">
+
+												<div class="selected_block img-block skinali_fruits">
+													<div><img class="set_image" data-type="skinali 0438"
+															src="/img/gallery/132/thumbs/thumb_l_skinali 0438.jpg"><span>skinali 0438</span></div>
+													<div><img class="set_image" data-type="skinali-4875"
+															src="/img/gallery/132/thumbs/thumb_l_skinali-4875.jpg"><span>skinali-4875</span></div>
+													<div><img class="set_image" data-type="skinali 0435"
+															src="/img/gallery/132/thumbs/thumb_l_skinali 0435.jpg"><span>skinali 0435</span></div>
+													<div><img class="set_image" data-type="skinali 0432"
+															src="/img/gallery/132/thumbs/thumb_l_skinali 0432.jpg"><span>skinali 0432</span></div>
+													<div><img class="set_image" data-type="skinali 1325"
+															src="/img/gallery/132/thumbs/thumb_l_skinali 1325.jpg"><span>skinali 1325</span></div>
+													<div><img class="set_image" data-type="skinali 3355"
+															src="/img/gallery/132/thumbs/thumb_l_skinali 3355.jpg"><span>skinali 3355</span></div>
+													<div><img class="set_image" data-type="skinali 3860"
+															src="/img/gallery/132/thumbs/thumb_l_skinali 3860.jpg"><span>skinali 3860</span></div>
+													<div><img class="set_image" data-type="skinali-5825"
+															src="/img/gallery/132/thumbs/thumb_l_skinali-5825.jpg"><span>skinali-5825</span></div>
+													<div><img class="set_image" data-type="skinali 0049"
+															src="/img/gallery/132/thumbs/thumb_l_skinali 0049.jpg"><span>skinali 0049</span></div>
+													<div><img class="set_image" data-type="skinali 0368"
+															src="/img/gallery/132/thumbs/thumb_l_skinali 0368.jpg"><span>skinali 0368</span></div>
+													<div><img class="set_image" data-type="skinali 0376"
+															src="/img/gallery/132/thumbs/thumb_l_skinali 0376.jpg"><span>skinali 0376</span></div>
+													<div><img class="set_image" data-type="skinali 0442"
+															src="/img/gallery/132/thumbs/thumb_l_skinali 0442.jpg"><span>skinali 0442</span></div>
+												</div>
+												<div class="selected_block img-block skinali_marble">
+													<div><img class="set_image" data-type="skinali-4352"
+															src="/img/gallery/131/thumbs/thumb_l_skinali-4352.jpg"><span>skinali-4352</span></div>
+													<div><img class="set_image" data-type="skinali-7675"
+															src="/img/gallery/131/thumbs/thumb_l_skinali-7675.jpg"><span>skinali-7675</span></div>
+													<div><img class="set_image" data-type="skinali-7572"
+															src="/img/gallery/131/thumbs/thumb_l_skinali-7572.jpg"><span>skinali-7572</span></div>
+													<div><img class="set_image" data-type="skinali-7620"
+															src="/img/gallery/131/thumbs/thumb_l_skinali-7620.jpg"><span>skinali-7620</span></div>
+													<div><img class="set_image" data-type="skinali-7488"
+															src="/img/gallery/131/thumbs/thumb_l_skinali-7488.jpg"><span>skinali-7488</span></div>
+													<div><img class="set_image" data-type="skinali-7144"
+															src="/img/gallery/131/thumbs/thumb_l_skinali-7144.jpg"><span>skinali-7144</span></div>
+													<div><img class="set_image" data-type="skinali-6743"
+															src="/img/gallery/131/thumbs/thumb_l_skinali-6743.jpg"><span>skinali-6743</span></div>
+													<div><img class="set_image" data-type="skinali-6744"
+															src="/img/gallery/131/thumbs/thumb_l_skinali-6744.jpg"><span>skinali-6744</span></div>
+													<div><img class="set_image" data-type="skinali-6720"
+															src="/img/gallery/131/thumbs/thumb_l_skinali-6720.jpg"><span>skinali-6720</span></div>
+													<div><img class="set_image" data-type="skinali-6448"
+															src="/img/gallery/131/thumbs/thumb_l_skinali-6448.jpg"><span>skinali-6448</span></div>
+													<div><img class="set_image" data-type="skinali-6608"
+															src="/img/gallery/131/thumbs/thumb_l_skinali-6608.jpg"><span>skinali-6608</span></div>
+													<div><img class="set_image" data-type="skinali-6133"
+															src="/img/gallery/131/thumbs/thumb_l_skinali-6133.jpg"><span>skinali-6133</span></div>
+												</div>
+												<div class="selected_block img-block kitchen_abstractio">
+													<div><img class="set_image" data-type="skinali 1845"
+															src="/img/gallery/130/thumbs/thumb_l_skinali 1845.jpg"><span>skinali 1845</span></div>
+													<div><img class="set_image" data-type="skinali 3160"
+															src="/img/gallery/130/thumbs/thumb_l_skinali 3160.jpg"><span>skinali 3160</span></div>
+													<div><img class="set_image" data-type="skinali 3521"
+															src="/img/gallery/130/thumbs/thumb_l_skinali 3521.jpg"><span>skinali 3521</span></div>
+													<div><img class="set_image" data-type="skinali-4908"
+															src="/img/gallery/130/thumbs/thumb_l_skinali-4908.jpg"><span>skinali-4908</span></div>
+													<div><img class="set_image" data-type="skinali 2757"
+															src="/img/gallery/130/thumbs/thumb_l_skinali 2757.jpg"><span>skinali 2757</span></div>
+													<div><img class="set_image" data-type="skinali 3890"
+															src="/img/gallery/130/thumbs/thumb_l_skinali 3890.jpg"><span>skinali 3890</span></div>
+													<div><img class="set_image" data-type="skinali-4110"
+															src="/img/gallery/130/thumbs/thumb_l_skinali-4110.jpg"><span>skinali-4110</span></div>
+													<div><img class="set_image" data-type="skinali 0079"
+															src="/img/gallery/130/thumbs/thumb_l_skinali 0079.jpg"><span>skinali 0079</span></div>
+													<div><img class="set_image" data-type="skinali 1953"
+															src="/img/gallery/130/thumbs/thumb_l_skinali 1953.jpg"><span>skinali 1953</span></div>
+													<div><img class="set_image" data-type="skinali 2014"
+															src="/img/gallery/130/thumbs/thumb_l_skinali 2014.jpg"><span>skinali 2014</span></div>
+													<div><img class="set_image" data-type="skinali 2155"
+															src="/img/gallery/130/thumbs/thumb_l_skinali 2155.jpg"><span>skinali 2155</span></div>
+													<div><img class="set_image" data-type="skinali 2212"
+															src="/img/gallery/130/thumbs/thumb_l_skinali 2212.jpg"><span>skinali 2212</span></div>
+												</div>
+
+												<div class="selected_block odnoton_block" style="display: block; opacity: 1;">
+														<div class="set_color" style="background-color: #a48f7a"><span>ral 7015</span></div>
+														<div class="set_color" style="background-color: #4a3526"><span>ral 7015</span></div>
+														<div class="set_color" style="background-color: #575044"><span>ral 7015</span></div>
+														<div class="set_color" style="background-color: #766a5e"><span>ral 7015</span></div>
+														<div class="set_color" style="background-color: #e6d2b5"><span>ral 7015</span></div>
+														<div class="set_color" style="background-color: #bb1e10"><span>ral 7015</span></div>
+														<div class="set_color" style="background-color: #59191f"><span>ral 7015</span></div>
+														<div class="set_color" style="background-color: #cf6955"><span>ral 7015</span></div>
+														<div class="set_color" style="background-color: #cb7375"><span>ral 7015</span></div>
+														<div class="set_color" style="background-color: #d8a0a6"><span>ral 7015</span></div>
+														<div class="set_color" style="background-color: #f67828"><span>ral 7015</span></div>
+														<div class="set_color" style="background-color: #e25303"><span>ral 7015</span></div>
+														<div class="set_color" style="background-color: #e88c00"><span>ral 7015</span></div>
+														<div class="set_color" style="background-color: #ff9b00"><span>ral 7015</span></div>
+														<div class="set_color" style="background-color: #faca30"><span>ral 7015</span></div>
+														<div class="set_color" style="background-color: #315442"><span>ral 7015</span></div>
+														<div class="set_color" style="background-color: #325928"><span>ral 7015</span></div>
+														<div class="set_color" style="background-color: #3c7460"><span>ral 7015</span></div>
+														<div class="set_color" style="background-color: #4d6f39"><span>ral 7015</span></div>
+														<div class="set_color" style="background-color: #61993b"><span>ral 7015</span></div>
+														<div class="set_color" style="background-color: #314f6f"><span>ral 7015</span></div>
+														<div class="set_color" style="background-color: #193153"><span>ral 7015</span></div>
+														<div class="set_color" style="background-color: #225f78"><span>ral 7015</span></div>
+														<div class="set_color" style="background-color: #0089b6"><span>ral 7015</span></div>
+														<div class="set_color" style="background-color: #6093ac"><span>ral 7015</span></div>
+														<div class="set_color" style="background-color: #76689a"><span>ral 7015</span></div>
+														<div class="set_color" style="background-color: #47243c"><span>ral 7015</span></div>
+														<div class="set_color" style="background-color: #903373"><span>ral 7015</span></div>
+														<div class="set_color" style="background-color: #844c82"><span>ral 7015</span></div>
+														<div class="set_color" style="background-color: #816183"><span>ral 7015</span></div>
+														<div class="set_color" style="background-color: #989ea1"><span>ral 7015</span></div>
+														<div class="set_color" style="background-color: #4f5358"><span>ral 7015</span></div>
+														<div class="set_color" style="background-color: #7a7b7a"><span>ral 7015</span></div>
+														<div class="set_color" style="background-color: #979392"><span>ral 7015</span></div>
+														<div class="set_color" style="background-color: #c8c8c7"><span>ral 7015</span></div>
+												</div>
+
+												
+
+											</div>
+
+										</div>
+									</div>
+									<div class="opacity"></div>
+									<button id="up-js"><i class="fas fa-chevron-up"></i></button>
+								</div>
+							</div>
+							
+
+
+
+
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
 		<section id="form-section">
 			<div class="container-fluid">
@@ -274,88 +452,100 @@
 			<div class="row justify-content-space">
 				<div class="work-item">
 					<div class="thubmail">
-						<a href="img/slider-home-1.png" data-lightbox="image-1" data-title="Арт. 34300"><img src="img/work-1.png" alt=""></a>
+						<a href="img/slider-home-1.png" data-lightbox="image-1" data-title="Арт. 34300"><img src="img/work-1.png"
+								alt=""></a>
 					</div>
 					<h3>Скинали</h3>
 					<span>Арт. 34300</span>
 				</div>
 				<div class="work-item">
 					<div class="thubmail">
-						<a href="img/slider-home-1.png" data-lightbox="image-1" data-title="Арт. 34300"><img src="img/work-3.png" alt=""></a>
+						<a href="img/slider-home-1.png" data-lightbox="image-1" data-title="Арт. 34300"><img src="img/work-3.png"
+								alt=""></a>
 					</div>
 					<h3>Скинали</h3>
 					<span>Арт. 34300</span>
 				</div>
 				<div class="work-item">
 					<div class="thubmail">
-						<a href="img/slider-home-1.png" data-lightbox="image-1" data-title="Арт. 34300"><img src="img/work-4.png" alt=""></a>
+						<a href="img/slider-home-1.png" data-lightbox="image-1" data-title="Арт. 34300"><img src="img/work-4.png"
+								alt=""></a>
 					</div>
 					<h3>Скинали</h3>
 					<span>Арт. 34300</span>
 				</div>
 				<div class="work-item">
 					<div class="thubmail">
-						<a href="img/slider-home-1.png" data-lightbox="image-1" data-title="Арт. 34300"><img src="img/work-5.png" alt=""></a>
+						<a href="img/slider-home-1.png" data-lightbox="image-1" data-title="Арт. 34300"><img src="img/work-5.png"
+								alt=""></a>
 					</div>
 					<h3>Скинали</h3>
 					<span>Арт. 34300</span>
 				</div>
 				<div class="work-item">
 					<div class="thubmail">
-						<a href="img/slider-home-1.png" data-lightbox="image-1" data-title="Арт. 34300"><img src="img/work-6.png" alt=""></a>
+						<a href="img/slider-home-1.png" data-lightbox="image-1" data-title="Арт. 34300"><img src="img/work-6.png"
+								alt=""></a>
 					</div>
 					<h3>Скинали</h3>
 					<span>Арт. 34300</span>
 				</div>
 				<div class="work-item">
 					<div class="thubmail">
-						<a href="img/slider-home-1.png" data-lightbox="image-1" data-title="Арт. 34300"><img src="img/work-7.png" alt=""></a>
+						<a href="img/slider-home-1.png" data-lightbox="image-1" data-title="Арт. 34300"><img src="img/work-7.png"
+								alt=""></a>
 					</div>
 					<h3>Скинали</h3>
 					<span>Арт. 34300</span>
 				</div>
 				<div class="work-item">
 					<div class="thubmail">
-						<a href="img/slider-home-1.png" data-lightbox="image-1" data-title="Арт. 34300"><img src="img/work-8.png" alt=""></a>
+						<a href="img/slider-home-1.png" data-lightbox="image-1" data-title="Арт. 34300"><img src="img/work-8.png"
+								alt=""></a>
 					</div>
 					<h3>Скинали</h3>
 					<span>Арт. 34300</span>
 				</div>
 				<div class="work-item">
 					<div class="thubmail">
-						<a href="img/slider-home-1.png" data-lightbox="image-1" data-title="Арт. 34300"><img src="img/work-9.png" alt=""></a>
+						<a href="img/slider-home-1.png" data-lightbox="image-1" data-title="Арт. 34300"><img src="img/work-9.png"
+								alt=""></a>
 					</div>
 					<h3>Скинали</h3>
 					<span>Арт. 34300</span>
 				</div>
 				<div class="work-item">
 					<div class="thubmail">
-						<a href="img/slider-home-1.png" data-lightbox="image-1" data-title="Арт. 34300"><img src="img/work-10.png" alt=""></a>
+						<a href="img/slider-home-1.png" data-lightbox="image-1" data-title="Арт. 34300"><img src="img/work-10.png"
+								alt=""></a>
 					</div>
 					<h3>Скинали</h3>
 					<span>Арт. 34300</span>
 				</div>
 				<div class="work-item">
 					<div class="thubmail">
-						<a href="img/slider-home-1.png" data-lightbox="image-1" data-title="Арт. 34300"><img src="img/work-11.png" alt=""></a>
+						<a href="img/slider-home-1.png" data-lightbox="image-1" data-title="Арт. 34300"><img src="img/work-11.png"
+								alt=""></a>
 					</div>
 					<h3>Скинали</h3>
 					<span>Арт. 34300</span>
 				</div>
 				<div class="work-item">
 					<div class="thubmail">
-						<a href="img/slider-home-1.png" data-lightbox="image-1" data-title="Арт. 34300"><img src="img/work-1.png" alt=""></a>
+						<a href="img/slider-home-1.png" data-lightbox="image-1" data-title="Арт. 34300"><img src="img/work-1.png"
+								alt=""></a>
 					</div>
 					<h3>Скинали</h3>
 					<span>Арт. 34300</span>
 				</div>
 				<div class="work-item">
-						<div class="thubmail">
-								<a href="img/slider-home-1.png" data-lightbox="image-1" data-title="Арт. 34300"><img src="img/work-1.png" alt=""></a>
-								<div class="work-item__hover">
-										<a href="#" class="btn-orange">СМОТРЕТЬ ЕЩЕ</a>
-									</div>
-							</div>
+					<div class="thubmail">
+						<a href="img/slider-home-1.png" data-lightbox="image-1" data-title="Арт. 34300"><img src="img/work-1.png"
+								alt=""></a>
+						<div class="work-item__hover">
+							<a href="#" class="btn-orange">СМОТРЕТЬ ЕЩЕ</a>
+						</div>
+					</div>
 
 				</div>
 			</div>
@@ -469,6 +659,8 @@
 
 	</div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/spectrum.js"></script>
+	<script src="js/constructor.js"></script>
 	<script src="js/scripts.min.js"></script>
 </body>
 
