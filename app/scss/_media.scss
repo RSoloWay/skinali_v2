@@ -133,6 +133,9 @@
 }
 
 @media only screen and (max-width: 1550px) {
+	#our-works .work-item {
+		width: 375px;
+	}
 	.short-description .slider-content .draggable-container #draggable1 {
 		top: 221px;
 		left: 708px;
@@ -364,8 +367,15 @@
 		}
 	}
 
-
-
+	.catalog {
+		#tabs {
+			.catalog-item {
+				.tooltip {
+					width: 450px;
+				}
+			}
+		}
+	}
 
 	.features-content {
 		padding-top: 20px;
@@ -524,6 +534,8 @@
 
 // ≥992px
 @include media-breakpoint-down(md) {
+	
+
 	#work-patterns .row:before {
 		height: 4px;
 		content: '';

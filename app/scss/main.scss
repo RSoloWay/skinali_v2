@@ -1136,6 +1136,9 @@ strong {
 
 }
 
+.about-panno {
+	margin-top: -5px;
+}
 
 
 #image-catalog {
@@ -1465,7 +1468,7 @@ strong {
 				}
 			}
 			.tooltip {
-				width: 580px;
+				// width: 580px;
 				position: absolute;
 				top: 100%;
 				left: 50%;
@@ -1482,6 +1485,7 @@ strong {
 				opacity: 0;
 				justify-content: space-between;
 				transform: translateX(-50%);
+
 				h3  {
 					color: #0b3d3c;
 					font-size: 20px;
@@ -3745,8 +3749,11 @@ b, strong {
 	#tabs {
 		.catalog-item.active {
 			.tooltip {
-				height: 90px;
+				height: 70px;
 				opacity: 1;
+				margin-top: -1px;
+				transform: scaleY(1);
+				transform: translateX(-50%);
 			}
 		}
 		.catalog-item-sq.active {
@@ -3788,7 +3795,7 @@ b, strong {
 				position: absolute;
 				top: 100%;
 				left: 50%;
-				height: 0;
+				height: 70px;
 				padding-left: 25px;
 				padding-right: 15px;
 				border-radius: 0 0 5px 10px;
@@ -3801,6 +3808,8 @@ b, strong {
 				opacity: 0;
 				justify-content: space-between;
 				transform: translateX(-50%);
+				transform: scaleY(0);
+				margin-top: -70px;			
 				h3 { 
 					color: #0b3d3c;
 					font-size: 16px;
@@ -3808,8 +3817,13 @@ b, strong {
 					margin: 0;
 				}
 				span {
-					color: #0b3d3c;
+					color: #444444;
 					font-size: 16px;
+					font-weight: 300;
+					i {
+						font-size: 18px;
+						font-weight: 400;
+					}
 				}
 				.btn_yellow {
 					width: 285px;
@@ -3817,6 +3831,7 @@ b, strong {
 					box-shadow: 3px 3px 0 #d97307;
 					padding: 0;
 					margin-left: 10px;
+					font-weight: 700;
 				}
 			}
 		}
