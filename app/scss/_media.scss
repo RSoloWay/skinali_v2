@@ -62,17 +62,21 @@
   
   .catalog #tabs .catalog-item-sq.active .tooltip {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     height: auto;
-    padding: 15px;
+    padding: 5px 15px;
   }
 
   .catalog #tabs .catalog-item-sq.active .tooltip > span {
-   margin-bottom: 10px;
+   margin: 0;
    display: block;
   }
 
   .catalog #tabs .catalog-item-sq .tooltip .btn_yellow {
+	width: 220px;
+	text-align: center;
+	// font-size: 16px;
+	line-height: 1.4;
     margin: 0;
   }
 
@@ -129,6 +133,9 @@
 }
 
 @media only screen and (max-width: 1550px) {
+	#our-works .work-item {
+		width: 375px;
+	}
 	.short-description .slider-content .draggable-container #draggable1 {
 		top: 221px;
 		left: 708px;
@@ -346,6 +353,30 @@
 // ≥1200px
 @include media-breakpoint-down(lg) {
 
+	.tabs-section {
+		
+		.tabs-btn {
+			.tabs-btn-content {
+				// margin-left: 10%;
+				h3 {
+					letter-spacing: 0px;
+					word-spacing: 0px;
+					font-size: 33px;
+				}
+			}
+		}
+	}
+
+	.catalog {
+		#tabs {
+			.catalog-item {
+				.tooltip {
+					width: 450px;
+				}
+			}
+		}
+	}
+
 	.features-content {
 		padding-top: 20px;
 	}
@@ -503,6 +534,8 @@
 
 // ≥992px
 @include media-breakpoint-down(md) {
+	
+
 	#work-patterns .row:before {
 		height: 4px;
 		content: '';
@@ -629,7 +662,12 @@
 			}
 			.catalog-item-sq {
 				.tooltip {
-					padding: 0;
+					padding: 2px 5px !important;
+					span {
+						line-height: 1.1;
+						text-align: center;
+					}
+
 					.btn_yellow {
 						width: 110%;
 						text-align: center;
@@ -664,7 +702,12 @@
 		
 		.tabs-btn {
 			.tabs-btn-content {
-				margin-left: 10%;
+				// margin-left: 10%;
+				h3 {
+					letter-spacing: 0px;
+					word-spacing: 0px;
+					font-size: 25px;
+				}
 			}
 		}
 		.container {
@@ -796,6 +839,19 @@
 			}
 		}
 	}
+	.delivery {
+		.delivery-item {
+			align-items: center !important;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			p, ul {
+				text-align: justify;
+				letter-spacing: -1px;
+				width: 90%;
+				font-size: 13px;
+			}
+		}
+	}
 	.short-description {
 		.slider-main {
 			margin-bottom: 30px;
@@ -880,10 +936,19 @@
 			.catalog-item-sq {
 				.tooltip {
 					padding: 0;
+					justify-content: space-between;
+					span {
+						margin: 0;
+						font-size: 12px;
+						i {
+							font-size: 12px;
+						}
+					}
 					.btn_yellow {
-						width: 110%;
 						text-align: center;
 						line-height: 1;
+						font-size: 12px;
+						padding: 2px 0;
 					}
 				}
 			}
