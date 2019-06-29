@@ -4090,5 +4090,9 @@ b, strong {
 	flex-direction: column !important;
 }
 
+#copyright {
+	margin-right: 5px ;
+}
+
 @import "constructor";
 @import "media"; // Always at the end
