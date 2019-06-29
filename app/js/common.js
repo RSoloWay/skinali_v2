@@ -36,6 +36,10 @@ $(function () {
 			$(el).css("height", heigth);
 		}
 
+		const date = new Date();
+		const getYear = date.getFullYear();
+		$('#copyright').text('© 2010-' + getYear)
+
 		
 	});
 
