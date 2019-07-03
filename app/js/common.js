@@ -1,4 +1,33 @@
 $(function () {
+  
+    $(document).ready(function () {
+      var el = "#first-screen #slider-home, #first-screen .container";
+      var heigth;
+      var widht = $(window).width();
+  
+      heigth = widht * 0.305;
+  
+      if ($(window).width() <= 1200) {
+        heigth = $("#slider-home img").height()
+      }
+  
+      if ($(window).width() <= 768) {
+        heigth = "100%";
+        $('#work-patterns .row').append('<span></span>');
+        $('.catalog .btn.btn_yellow, #tabs .btn.btn_yellow').text('Заказать');
+      }
+  
+      if ($(window).width() >= 1200) { 
+        $(el).css("height", heigth);
+        $('.fotooboi #first-screen').css("height", $(".slick-list").height());
+      }
+  
+      const date = new Date();
+      const getYear = date.getFullYear();
+      $('#copyright').text('© 2010-' + getYear)
+  
+      
+    });
 	$("#slider-home").slick({
 		adaptiveHeight: true,
 		arrows: true,
@@ -13,34 +42,6 @@ $(function () {
 			},
 
 		}]
-	});
-
-	$(document).ready(function () {
-		var el = "#first-screen #slider-home, #first-screen .container";
-		var heigth;
-		var widht = $(window).width();
-
-		heigth = widht * 0.305;
-
-		if ($(window).width() <= 1200) {
-			heigth = $("#slider-home img").height()
-		}
-
-		if ($(window).width() <= 768) {
-			heigth = "100%";
-			$('#work-patterns .row').append('<span></span>');
-			$('.catalog .btn.btn_yellow, #tabs .btn.btn_yellow').text('Заказать');
-		}
-
-		if ($(window).width() >= 1200) { 
-			$(el).css("height", heigth);
-		}
-
-		const date = new Date();
-		const getYear = date.getFullYear();
-		$('#copyright').text('© 2010-' + getYear)
-
-		
 	});
 
 	$(document).ready(function () {
