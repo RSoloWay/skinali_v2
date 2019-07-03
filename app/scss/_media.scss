@@ -201,7 +201,7 @@
 
   .short-description .slider-content .draggable-container #draggable3 {
     left: 1089px;
-    top: -44px;
+    top: 20px;
   }
 
   .short-description .slider-content .draggable-container #draggable4 {
@@ -240,6 +240,12 @@
 
 	.catalog #tabs .catalog-item-sq {
 		position: relative;
+	}
+
+	#draggable3 {
+		img{
+			width: 130px;
+		}
 	}
 }
 
