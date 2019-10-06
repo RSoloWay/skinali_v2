@@ -209,6 +209,152 @@
 
 
 		</section>
+
+		<section id="cost-calculator">
+			<h2>калькулятор стоимости</h2>
+			<div class="calculator-wrapper">
+				<div class="container">
+					<form action="" id="calc-form">
+						<div class="row calculator-item">
+							<div class="col-12 city">
+								<span>1</span>
+								<select name="cities" id="cities">
+									<option value="">ВАШ ГОРОД</option>
+									<option value="Киев">Киев</option>
+									<option value="Белая Церковь">Белая Церковь</option>
+									<option value="Винница">Винница</option>
+									<option value="Житомир">Житомир</option>
+									<option value="Запорожье">Запорожье</option>
+									<option value="Днепр">Днепр</option>
+									<option value="Ивано-Франковск">Ивано-Франковск</option>
+									<option value="Измаил">Измаил</option>
+									<option value="Кировоград">Кировоград</option>
+									<option value="Луцк">Луцк</option>
+									<option value="Львов">Львов</option>
+									<option value="Одесса">Одесса</option>
+									<option value="Полтава">Полтава</option>
+									<option value="Суммы">Суммы</option>
+									<option value="Тернополь">Тернополь</option>
+									<option value="Харьков">Харьков</option>
+									<option value="Херсон">Херсон</option>
+									<option value="Хмельницкий">Хмельницкий</option>
+									<option value="Черкассы">Черкассы</option>
+									<option value="Черонвцы">Черонвцы</option>
+									<option value="Другой город">Другой город</option>
+								</select>
+							</div>	
+						</div>
+						<div class="row sizes calculator-item">
+							<div class="col-12 col-sm-6 col-md-6 calculator-item__title">
+								<span>2</span>
+								<h3>Укажите размеры деталей</h3>
+							</div>
+							<div class="col-12 col-md-6 col-sm-6 calculator-item__form">
+								<div class="container-fluid panels">
+									<div class="row panels-item">
+										<div class="col-md-4 col-sm-12">
+											<p class="panel-title">панель 1</p>
+										</div>
+										<div class="col-md-8 col-sm-12">
+											<input type="text" class="width" pattern="">
+											<span>x</span>
+											<input type="text" class="height" pattern="">
+											<span>см</span>
+										</div>
+									</div>
+								</div>
+								<div class="container-fluid">
+									<div class="row">
+										<div class="col-12 col-md-4 col-sm-4"><p id="panel-btn">панель 2</p></div>
+									</div>
+									<div class="row justify-content-center">
+										<div class="col-12 col-md-4 col-sm-4 offset-md-4 offset-sm-4 size-result">
+											<input class="result" type="text" >
+											<span>м&sup2;</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row glass-type calculator-item">
+							<div class="col-md-6 col-sm-6 calculator-item__title">
+								<span>3</span>
+								<h3>Выберите тип стекла</h3>
+							</div>
+							<div class="col-md-6 col-sm-6 calculator-item__form">
+								<div class="container-fluid">
+									<div class="row">
+										<div class="col-6 col-md-4 col-sm-4">
+											<p>тип стекла</p>
+										</div>
+										<div class="col-6 col-md-8 col-sm-8">
+											<select name="" id="window-type">
+												<option value="common">обычное</option>
+												<option value="optiwhite">осветленное(оptiwhite)</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row mount-type calculator-item">
+							<div class="col-md-6 col-sm-6 calculator-item__title">
+								<span>4</span>
+								<h3>Обозначте способ монтажа</h3>
+							</div>
+							<div class="col-md-6 col-sm-6 calculator-item__form">
+								<div class="container-fluid">
+									<div class="row">
+										<div class="col-6 col-md-4 col-sm-4">
+											<p>тип крепления</p>
+										</div>
+										<div class="col-6 col-md-8 col-sm-8">
+											<select name="" id="install-type">
+												<option value="Glue">на клей</option>
+												<option value="Holder">на держатель</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row additionally">
+							<div class="col-12 col-md-4 col-sm-5 offset-sm-1 offset-md-2 additionally-title">
+								<span>5</span>
+								<h3>Дополнительные услуги</h3>
+							</div>
+							<div class="col-md-4 col-sm-4 additionally-form">
+								<div class="row">
+									<div class="col-6 additionally-item">
+										<input type="checkbox" id="delivery"><label for="delivery">доставка</label>
+									</div>
+									<div class="col-6 additionally-item">
+										<input type="checkbox" id="mounting"><label for="mounting">монтаж</label>
+									</div>
+									<div class="col-6 additionally-item">
+										<input type="checkbox" id="fitting"><label for="fitting">замер</label>
+									</div>
+									<div class="col-6 additionally-item">
+										<input type="checkbox" id="socket"><label for="socket">розетки</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="row result">
+							<div class="col-6 justify-content-end result-title">
+								<h3>стоимость</h3>
+							</div>
+							<div class="col-6 result-form">
+								<input type="text" placeholder="0" disabled id="totalCost">
+								<span>грн</span>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+
 		<section id="online-design">
 			<h2 class="title-section">ОНЛАЙН ДИЗАЙН</h2>
 			<div class="container-fluid">

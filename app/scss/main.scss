@@ -4272,5 +4272,267 @@ strong {
   margin-right: 5px;
 }
 
+
+#cost-calculator {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0 20px 0;
+  h2 {
+    position: relative;
+    margin-bottom: 20px !important;
+    width: 100%;
+    color: white;
+    text-transform: uppercase;
+    background-color: #1c2638;;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    &:before {
+      position: absolute;
+      content: '';
+      background: white;
+      border-radius: 50%;
+      border: 2px solid #00bebe;
+      width: 16px;
+      height: 16px;
+      top: 50%;
+      margin-top: -8px;
+      margin-left: -36px;
+    }
+    &:after {
+      position: absolute;
+      content: '';
+      background: white;
+      border-radius: 50%;
+      border: 2px solid #00bebe;
+      width: 16px;
+      height: 16px;
+      top: 50%;
+      margin-top: -8px;
+      margin-left: 20px;
+    }
+  }
+  .calculator-wrapper {
+    background: url(../img/calculator_bg.png);
+    width: 100%;
+    padding: 40px 0;
+    #calc-form {
+      .city {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span {
+          margin-right: 30px;
+          font-size: 28px;
+          font-weight: 700;
+          line-height: 18px;
+        }
+        select {
+          text-transform: uppercase;
+          color: #f48208;
+          font-weight: 700;
+          font-size: 25px;
+        }
+      }
+      .sizes {
+        .calculator-item__form {
+          .panels-item {
+            margin-bottom: 10px;
+          }
+          .col-md-8 {
+            span {
+              font-size: 20px;
+              font-weight: 700;
+            }
+          }
+          .col-md-4 {
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            p {
+              width: 100px;
+              margin: 0;
+              font-size: 20px;
+              font-weight: 700;
+              line-height: 33.05px;
+            }
+            #panel-btn {
+              margin-top: 20px;
+              cursor: pointer;
+              position: relative;
+              color: #6b6b6b;
+              font-weight: 400;
+              &::before {
+                position: absolute;
+                left: -38px;
+                top: 4px;
+                display: flex;
+                content: '';
+                width: 28px;
+                height: 28px;
+                background: url(../img/panel-btn_icon.png);
+                background-position: center
+              }
+            }
+          }
+          .size-result {
+            margin-top: 15px;
+            align-items: center;
+            input {
+              width: 110px;
+              text-align: right;
+              padding-right: 20px;
+            }
+            span {
+              margin-left: 20px;
+              font-size: 20px;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+      .calculator-item {
+        padding-bottom: 30px;
+        .calculator-item__title {
+          display: flex;
+          align-items: center;
+          height: max-content;
+          span {
+            color: #444444;
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 18px;
+            margin-right: 20px;
+          }
+          h3 {
+            padding: 0;
+            margin: 0;
+            text-transform: uppercase;
+            color: #f48208;
+            font-size: 24px;
+            font-weight: 700;
+            
+          }
+        }
+        .calculator-item__form {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          justify-content: center;
+          .col-4, .col-md-4 {
+            padding: 0;
+            display: flex;
+            align-items: center;
+            p {
+              margin: 0;
+              font-size: 20px;
+              font-weight: 700;
+              line-height: 33.05px;
+            }
+          }
+          .col-8, .col-md-8 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            input {
+              border: 1.5px solid #000;
+              width: 130px;
+              height: 35px;
+              text-align: right;
+              padding: 0 10px 0 10px
+            }
+            select {
+              font-style: italic;
+              border: 1.5px solid #000;
+            }
+          }
+        }
+      }
+    }
+    .additionally {
+      .additionally-title {
+        padding-right: 0;
+      }
+      .additionally-form {
+        .additionally-item {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          input {
+            display: none;
+          }
+          label {
+            width: 60px;
+            cursor: pointer;
+            font-size: 20px;
+            position: relative;
+            &::before {
+              position: absolute;
+              top: 50%;
+              margin-top: -8px;
+              left: -25px;
+              content: '';
+              width: 20px;
+              height: 20px;
+              background: url(../img/additionaly_off.png);
+              background-size: 100%;
+            }
+          }
+          input[type='checkbox']:checked + label {
+            &::before {
+              background: url(../img/additionally_active.png) no-repeat;
+              background-size: 100%;
+            }
+          }
+        }
+      }
+      .col-md-4 {
+        display: flex;
+        align-items: center;
+        span {
+          color: #444444;
+          font-size: 28px;
+          font-weight: 700;
+          line-height: 18px;
+          margin-right: 20px;
+        }
+        h3 {
+          text-transform: uppercase;
+          color: #6b6b6b;
+          font-size: 24px;
+          font-weight: 400;
+          line-height: 18px;
+        }
+      }
+    }
+    .result {
+      margin-top: 30px;
+      .result-title {
+        h3 {
+          color: #00bebe;
+          font-size: 28px;
+          font-weight: 700;
+          line-height: 30.23px;
+        }
+      }
+      .result-form {
+        padding-left: 0;
+        input {
+          border: 2px solid #00bebe;
+          text-align: right;
+          padding-right: 20px;
+          font-size: 20px;
+          font-weight: 700;
+          color: #000;
+        }
+      }
+    }
+  }
+}
+
+
 @import "constructor";
 @import "media"; // Always at the end
