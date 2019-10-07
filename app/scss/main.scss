@@ -4351,7 +4351,7 @@ strong {
           .col-md-8 {
             span {
               font-size: 20px;
-              font-weight: 700;
+              font-weight: 600;
             }
           }
           .col-md-4 {
@@ -4392,11 +4392,12 @@ strong {
               width: 110px;
               text-align: right;
               padding-right: 20px;
+              margin: 0;
             }
             span {
               margin-left: 20px;
               font-size: 20px;
-              font-weight: 700;
+              font-weight: 600;
             }
           }
         }
@@ -4484,6 +4485,7 @@ strong {
               padding: 0 10px 0 10px
             }
             select {
+              width: 220px;
               height: 40px;
               font-style: italic;
               border: 1.5px solid #000;
@@ -4497,6 +4499,7 @@ strong {
         padding-right: 0;
       }
       .additionally-form {
+        padding-left: 60px;
         .additionally-item {
           display: flex;
           justify-content: center;
@@ -4561,6 +4564,7 @@ strong {
       .result-form {
         padding-left: 0;
         input {
+          width: 200px;
           border: 2px solid #00bebe;
           text-align: right;
           padding-right: 20px;
