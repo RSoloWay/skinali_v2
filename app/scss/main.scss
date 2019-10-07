@@ -4427,11 +4427,13 @@ strong {
             background-size: 100%;
             .tooltip-btn {
               position: absolute;
-              margin-top: -6px;
+              margin: -6px 0 0 0;
               color: #00bebe;
               font-size: 25px;
               font-weight: 700;
               line-height: 30.23px;
+              top: 0;
+              right: 0;
               cursor: pointer;
               .tooltip {
                 color: white;
