@@ -265,7 +265,7 @@ $("#panel-btn").click(function(){
 	panels = document.querySelector('.panels');
 	
 	
-	$(panelExample[0]).clone().appendTo(panels).toggleClass('№' + panelExample.length);
+	$(panelExample[0]).clone().appendTo(panels).toggleClass('newPanel-' + panelExample.length);
 	
 	
 
