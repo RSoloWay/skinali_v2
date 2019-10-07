@@ -4408,13 +4408,43 @@ strong {
             margin-right: 20px;
           }
           h3 {
-            padding: 0;
+            position: relative;
+            padding: 0 35px;
             margin: 0;
             text-transform: uppercase;
             color: #f48208;
             font-size: 24px;
             font-weight: 700;
-            
+            background: url(../img/calc-title_bg.png) no-repeat;
+            background-size: 100%;
+            .tooltip-btn {
+              position: absolute;
+              margin-top: -6px;
+              color: #00bebe;
+              font-size: 25px;
+              font-weight: 700;
+              line-height: 30.23px;
+              cursor: pointer;
+              .tooltip {
+                color: white;
+                text-transform: none;
+                display: none;
+                position: absolute;
+                top: 0;
+                left: 20px;
+                z-index: 99;
+                width: 350px;
+                border-radius: 15px;
+                padding: 10px;
+                font-size: 13px;
+                background: #00bebe;
+              }
+              &:hover {
+                .tooltip {
+                  display: block;
+                }
+              }
+            }
           }
         }
         .calculator-item__form {
@@ -4428,12 +4458,14 @@ strong {
             align-items: center;
             p {
               margin: 0;
+              width: max-content;
               font-size: 20px;
               font-weight: 700;
               line-height: 33.05px;
             }
           }
           .col-8, .col-md-8 {
+            
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -4445,6 +4477,7 @@ strong {
               padding: 0 10px 0 10px
             }
             select {
+              height: 40px;
               font-style: italic;
               border: 1.5px solid #000;
             }
@@ -4504,7 +4537,7 @@ strong {
           color: #6b6b6b;
           font-size: 24px;
           font-weight: 400;
-          line-height: 18px;
+          line-height: 24px;
         }
       }
     }

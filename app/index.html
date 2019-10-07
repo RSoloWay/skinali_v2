@@ -247,7 +247,14 @@
 						<div class="row sizes calculator-item">
 							<div class="col-12 col-sm-6 col-md-6 calculator-item__title">
 								<span>2</span>
-								<h3>Укажите размеры деталей</h3>
+								<h3>Укажите размеры деталей 
+									<span class="tooltip-btn">
+										?
+										<span class="tooltip">Укажите высоту панели кухонного фартука и ширину в сантиметрах.
+											Чтобы добавить панель (если планируются повороты) нажмите на +
+										</span>
+									</span>
+								</h3>
 							</div>
 							<div class="col-12 col-md-6 col-sm-6 calculator-item__form">
 								<div class="container-fluid panels">
@@ -255,10 +262,10 @@
 										<div class="col-md-4 col-sm-12">
 											<p class="panel-title">панель 1</p>
 										</div>
-										<div class="col-md-8 col-sm-12">
-											<input type="text" class="width" pattern="">
+										<div class="col-md-8 col-sm-12 sizes-panel">
+											<input type="text" id="width" pattern="">
 											<span>x</span>
-											<input type="text" class="height" pattern="">
+											<input type="text" id="heigth" pattern="">
 											<span>см</span>
 										</div>
 									</div>
@@ -269,7 +276,7 @@
 									</div>
 									<div class="row justify-content-center">
 										<div class="col-12 col-md-4 col-sm-4 offset-md-4 offset-sm-4 size-result">
-											<input class="result" type="text" >
+											<input class="result" id='size' type="text">
 											<span>м&sup2;</span>
 										</div>
 									</div>
@@ -279,7 +286,15 @@
 						<div class="row glass-type calculator-item">
 							<div class="col-md-6 col-sm-6 calculator-item__title">
 								<span>3</span>
-								<h3>Выберите тип стекла</h3>
+								<h3>Выберите тип стекла		
+									<span class="tooltip-btn">
+										?
+										<span class="tooltip">Есть два типа стекла: обычное (БЦ м0) и осветлённое (Optiwhite). 
+											Обычное стекло имеет зеленоватый оттенок, подходит для тёмных и насыщенных изображений. 
+											Осветлённое стекло избавлено зелёного оттенка, подходит для светлых, пастельных изображений.
+										</span>
+									</span>
+								</h3>
 							</div>
 							<div class="col-md-6 col-sm-6 calculator-item__form">
 								<div class="container-fluid">
@@ -300,7 +315,17 @@
 						<div class="row mount-type calculator-item">
 							<div class="col-md-6 col-sm-6 calculator-item__title">
 								<span>4</span>
-								<h3>Обозначте способ монтажа</h3>
+								<h3>Обозначте способ монтажа	
+									<span class="tooltip-btn">
+										?
+										<span class="tooltip">Исходя из состояния стены рабочей поверхности монтаж скинали производится на держатели или специальный клей. 
+											В случае, если на поверхности кухонного фартука есть значительные неровности, используется монтаж на держатели, их "шляпки" 
+											имеют небольшой диаметр (около 14мм) и устанавливаются по периметру стекла на определённой дистанции друг от друга. 
+											Второй вид монтажа предполагает визуально невидимый крепёж стёкол и используется мастерами чаще всего. 
+											Этот надежный и прочный способ монтажа позволяет монтировать скинали вплотную к стене, без зазоров.
+										</span>
+									</span>
+								</h3>
 							</div>
 							<div class="col-md-6 col-sm-6 calculator-item__form">
 								<div class="container-fluid">
@@ -807,6 +832,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="js/spectrum.js"></script>
 	<script src="js/constructor.js"></script>
+	<script src="js/calculator.js"></script>
 	<script src="js/scripts.min.js"></script>
 </body>
 
