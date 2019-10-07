@@ -654,6 +654,19 @@
     height: 105%;
 }
 
+#cost-calculator {
+  .calculator-item {
+    h3 {
+      padding: 0 25px !important;
+    }
+    
+  }
+  .additionally {
+    h3 {
+      font-size: 20px !important;
+    }
+  }
+}
 
 }
 
@@ -677,6 +690,21 @@
 // ≥992px
 @include media-breakpoint-down(md) {
 
+  #cost-calculator {
+    .calculator-item {
+      h3 {
+        padding: 0 30px !important;
+        font-size: 20px !important;
+        background-size:  100% 100% !important;
+      }
+      
+    }
+    .additionally {
+      h3 {
+        font-size: 20px !important;
+      }
+    }
+  }
 
 	.slick-next, .slick-prev {
 		display: block !important;
@@ -1126,12 +1154,14 @@
 	.tabs-section .tabs-info .col-lg-6 img {
 		width: 100%;
 		height: auto;	
-}
+  }
 	.tabs-section .tabs-info .col-lg-6 {
 		width: 50%;
 		align-items: flex-start;
 	}
 }
+
+
 
 @media all and (max-width: 767px) {
   #our-works .work-item {
@@ -1629,7 +1659,106 @@
 
 	.tabs-section .tabs-btn .tabs-btn-content h3 {
 		line-height: 1.2;
-	}
+  }
+  #cost-calculator {
+    padding: 10px 0 10px 0;
+    h2 {
+      font-size: 15px;
+      margin-bottom: 10px !important;
+      &:before {
+        width: 10px;
+        height: 10px;
+        margin-top: -5px;
+        margin-left: -25px;
+      }
+      &:after {
+        width: 10px;
+        height: 10px;
+        margin-top: -5px;
+        margin-left: 14px;
+      }
+    }
+    .calculator-wrapper {
+
+      .city {
+        span {
+          font-size: 20px !important;
+        }
+        select {
+          font-size: 16px !important;
+        }
+      }
+      .sizes {
+        .calculator-item__form {
+          .col-md-4 {
+            display: flex !important;
+          }
+          .col-md-8 {
+            span {
+              font-size: 17 px !important;
+            }
+          }
+        }
+      }
+      .calculator-item {
+        .calculator-item__title {
+          display: flex !important;
+          justify-content: center !important;
+          span {
+            font-size: 20px !important;
+          }
+          h3 {
+            padding: 0 10px !important;
+            font-size: 17px !important;
+            .tooltip-btn {
+              font-size: 20px !important;
+              .tooltip {
+                top: 110% !important;
+                left: -260px !important;
+                width: 270px !important;
+                font-size: 12px !important;
+                padding: 7px !important;
+              }
+            }
+          }
+        }
+        .calculator-item__form {
+          padding-top: 10px;
+          p {
+
+            font-size: 18px !important;
+          }
+          select {
+            width: 100%;
+          }
+        }
+      }
+      .additionally {
+        .additionally-title {
+          align-items: center !important;
+          span {
+            font-size: 20px !important;
+          }
+          h3 {
+            font-size: 18px !important;
+          }
+        }
+      }
+      .result {
+        .result-title {
+          h3 {
+            font-size: 20px;
+          }
+        }
+        .result-form {
+          input {
+            width: 80%;
+          }
+        }
+      }
+    }
+
+  }
 }
 
 /*==========  Mobile First  ==========*/

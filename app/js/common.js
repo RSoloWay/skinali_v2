@@ -258,4 +258,28 @@ $(function () {
 		
 	});
 });
+
+
+$("#panel-btn").click(function(){
+	let panelExample = document.getElementsByClassName('panels-item'),
+	panels = document.querySelector('.panels');
+	
+	
+	$(panelExample[0]).clone().appendTo(panels).toggleClass('№' + panelExample.length);
+	
+	
+
+	$("#panel-btn").html('панель ' + (panelExample.length + 1));
+	
+	let newPanel = document.getElementsByClassName('panel-title')[panelExample.length - 1],
+		newPanelWidth = document.getElementsByClassName('width')[panelExample.length - 1],
+		newPanelHeight = document.getElementsByClassName('height')[panelExample.length - 1];
+
+	$(newPanel).html('панель ' + panelExample.length)
+	$(newPanelWidth).val('');
+	$(newPanelHeight).val('');
+
+})
+
+
 });
