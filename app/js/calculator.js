@@ -89,11 +89,6 @@ $(function () {
         if (width !== 0 || heigth !== 0) {
           $("#size").val(size.toFixed(2))
           result = Math.round(size * price);
-        
-          console.log(price)
-          console.log(result)
-          console.log(width)
-          console.log(heigth)
 
           $("#totalCost").val(getResult(result));
           $('#errors').text("");
